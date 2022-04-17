@@ -22,6 +22,26 @@ pip install \
 pacman -S --noconfirm \
         tmate tmux screen mlocate
 
+# package required for building llvm toolchain build
+pacman -S --noconfirm \
+          base-devel \
+          bc \
+          bison \
+          ccache \
+          clang \
+          cpio \
+          cmake \
+          flex \
+          git \
+          libelf \
+          lld \
+          llvm \
+          ninja \
+          openssl \
+          python3 \
+          uboot-tools \
+          patchelf
+
 # Create a non-root user for AUR
 useradd -m -G wheel -s /bin/bash testuser
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
