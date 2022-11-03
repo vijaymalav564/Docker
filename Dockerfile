@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM anasty17/mltb:latest
 
 LABEL maintainer="vijaymalav564 <vijaymalav564@gmail.com>"
 
@@ -65,7 +65,7 @@ RUN apt-get update -q -y \
     # Linux Standard Base Packages
     sudo git ffmpeg maven nodejs ca-certificates-java pigz tar rsync rclone aria2 adb autoconf automake axel bc bison build-essential ccache lsb-core lsb-security ca-certificates systemd udev \
     # Upload/Download/Copy/FTP utils
-    git curl wget wput axel rsync \
+    git curl wget wput axel rsync mediainfo \
     # GNU and other core tools/utils
     binutils coreutils bsdmainutils util-linux patchutils libc6-dev sudo \
     # Security CLI tools
