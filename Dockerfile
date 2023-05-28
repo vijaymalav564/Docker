@@ -87,7 +87,7 @@ RUN apt-get update -q -y \
     libxml2 libxml2-utils xsltproc expat re2c \
     # Misc utils
     file gawk xterm screen rename tree schedtool software-properties-common \
-    dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick optipng advancecomp \
+    dos2unix jq flex bison gperf ibb2-dev pngcrush imagemagick optipng advancecomp \
     # LTS specific Unique packages
     ${UNIQ_PACKAGES} \
     # Additional
